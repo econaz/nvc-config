@@ -23,6 +23,7 @@ map("n", "]e", diagnostic_goto(true, "ERROR"), { desc = "Next Error" })
 map("n", "[e", diagnostic_goto(false, "ERROR"), { desc = "Prev Error" })
 map("n", "]w", diagnostic_goto(true, "WARN"), { desc = "Next Warning" })
 map("n", "[w", diagnostic_goto(false, "WARN"), { desc = "Prev Warning" })
+<<<<<<< HEAD
 
 -- map("n", "<c-/>", function()
 --   Snacks.terminal(nil, { cwd = LazyVim.root() })
@@ -31,3 +32,5 @@ map("n", "[w", diagnostic_goto(false, "WARN"), { desc = "Prev Warning" })
 -- -- Terminal Mappings
 -- map("t", "<C-/>", "<cmd>close<cr>", { desc = "Hide Terminal" })
 vim.api.nvim_set_keymap("t", "<esc>", "<C-\\><C-n><C-w><C-w>", { noremap = true, silent = true })
+=======
+>>>>>>> f819ed952e3e7ed7163b13a4111d96ea86af1533
