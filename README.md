@@ -1,0 +1,3 @@
+
+
+self nvchad config
