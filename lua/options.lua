@@ -1,12 +1,11 @@
 require "nvchad.options"
 
-
 local opt = vim.opt
 
 opt.cursorlineopt = "both"
 
 opt.list = true
-opt.listchars = { tab ="» ", trail = "·", nbsp = "␣" }
+opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
 if vim.fn.has "win32" == 1 then
   opt.shell = vim.fn.executable "pwsh" == 1 and "pwsh" or "powershell"
@@ -41,7 +40,6 @@ if os.getenv "SSH_TTY" then
     },
   }
 end
-
 
 -- add yours here!
 
